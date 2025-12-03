@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Sobre Nosotros - Nube Social Networks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <div class="logo">Nube Social Networks</div>
+      <ul class="nav-links">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/about.html">Sobre</a></li>
+        <li><a href="/services.html">Servicios</a></li>
+        <li><a href="/contact.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="hero-section">
+    <div class="container">
+      <h1>Sobre Nosotros</h1>
+      <p>Conectando aplicaciones con redes sociales de manera simple, moderna y segura.</p>
+    </div>
+  </header>
+
+  <!-- CONTENIDO -->
+  <main class="container info-section">
+
+    <h2>Nuestra misión</h2>
+    <p style="max-width: 800px; margin:auto; text-align:center; margin-bottom:2rem;">
+      Nube Social Networks nace con el objetivo de simplificar la integración entre aplicaciones
+      y plataformas sociales como TikTok, Instagram, Facebook o YouTube.
+      Queremos que los desarrolladores puedan implementar OAuth en minutos,
+      no en horas.
+    </p>
+
+    <div class="cards-grid">
+
+      <div class="card">
+        <h3>Integraciones Sociales</h3>
+        <p>
+          Conexiones rápidas mediante OAuth 2.0, listas para usar en tus proyectos.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Soluciones Escalables</h3>
+        <p>
+          Arquitectura preparada para millones de usuarios y múltiples redes.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Plataforma Segura</h3>
+        <p>
+          Conexiones cifradas, protocolos estándar y cumplimiento de políticas de cada API.
+        </p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Nube Social Networks</p>
+    </div>
+  </footer>
+
+</body>
+</html>
