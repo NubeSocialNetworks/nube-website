@@ -1,70 +1,123 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Nube Marketing & Social Networks</title>
-    <link rel="stylesheet" href="styles.css" />
-</head>
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #0D0D0D;
+    scroll-behavior: smooth;
+}
 
-<body>
+h1, h2 {
+    margin-bottom: 20px;
+}
 
-<header>
-    <div class="logo">Nube Marketing & Social Networks</div>
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#quehacemos">Qué hacemos</a>
-        <a href="#tecnologia">Tecnología IA</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-</header>
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffffc9;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    z-index: 1000;
+    border-bottom: 1px solid #e0e0e0;
+}
 
-<section id="inicio" class="hero">
-    <h1>Transformamos tus redes sociales con Inteligencia Artificial</h1>
-    <p>Maximizamos tu engagement mediante análisis de datos, modelos predictivos y estrategias inteligentes.</p>
-    <a class="btn" href="#quehacemos">Descubre cómo trabajamos</a>
-</section>
+header .logo {
+    font-weight: bold;
+    font-size: 18px;
+}
 
-<section id="mision" class="section">
-    <h2>Nuestra Misión</h2>
-    <p>Impulsar a empresas y creadores digitales mediante estrategias basadas en datos, automatización e inteligencia artificial.</p>
-</section>
+header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #0D0D0D;
+    font-weight: 600;
+}
 
-<section id="vision" class="section">
-    <h2>Nuestra Visión</h2>
-    <p>Ser la consultora líder en optimización de redes sociales con modelos IA en el mercado hispanohablante.</p>
-</section>
+header nav a:hover {
+    color: #005CFF;
+}
 
-<section id="quehacemos" class="section">
-    <h2>Qué hacemos</h2>
-    <ul>
-        <li>Consultoría inteligente en redes sociales</li>
-        <li>Modelos predictivos de engagement</li>
-        <li>Optimización avanzada del contenido</li>
-        <li>Dashboards y automatización con IA</li>
-        <li>Gestión profesional de TikTok, Instagram y YouTube</li>
-    </ul>
-</section>
+/* SECTIONS */
+.section {
+    padding: 120px 40px;
+}
 
-<section id="tecnologia" class="section">
-    <h2>Tecnología IA</h2>
-    <p>Nuestros modelos analizan video, texto y KPIs para ofrecer predicciones fiables y accionables.</p>
-</section>
+.section-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
 
-<section id="nosotros" class="section">
-    <h2>Nosotros</h2>
-    <p>Somos especialistas en IA aplicada al marketing, crecimiento en redes, análisis y automatización de procesos.</p>
-</section>
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url("assets/background.jpg") no-repeat center center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+}
 
-<section id="contacto" class="section contact">
-    <h2>Contacto</h2>
-    <p>Email: <strong>contacto@nubesocialnetworks.com</strong></p>
-</section>
+.hero p {
+    max-width: 600px;
+}
 
-<footer>
-    <p>© 2025 Nube Marketing & Social Networks — Todos los derechos reservados</p>
-</footer>
+.btn {
+    background: white;
+    color: #005CFF;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: 600;
+}
 
-</body>
-</html>
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* CONTACTO */
+.contact p {
+    font-size: 18px;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f4f5f7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+    header nav a {
+        margin-left: 10px;
+    }
+    .hero {
+        padding: 0 20px;
+    }
+}
+
