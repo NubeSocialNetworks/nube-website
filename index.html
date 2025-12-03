@@ -11,25 +11,26 @@
 
 <body>
 
-  <!-- NAVBAR ACTUALIZADO -->
-  <nav class="navbar">
-    <div class="container nav-content">
-      <div class="logo">Nube Social Networks</div>
+  <div class="container"><!-- Contenedor principal -->
 
-      <ul class="nav-links">
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/about.html"> Nosotros</a></li>
-        <li><a href="/services.html">Servicios</a></li>
-        <li><a href="/contact.html">Contacto</a></li>
-        <li><a href="/terms.html">Términos</a></li>
-        <li><a href="/privacy.html">Privacidad</a></li>
-      </ul>
-    </div>
-  </nav>
+    <!-- NAVBAR ACTUALIZADO -->
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo">Nube Social Networks</div>
 
-  <!-- HERO SECTION -->
-  <header class="hero-section">
-    <div class="container">
+        <ul class="nav-links">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/about.html">Nosotros</a></li>
+          <li><a href="/services.html">Servicios</a></li>
+          <li><a href="/contact.html">Contacto</a></li>
+          <li><a href="/terms.html">Términos</a></li>
+          <li><a href="/privacy.html">Privacidad</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero-section">
       <h1>Demo de Login con TikTok</h1>
       <p>Prueba cómo funciona el flujo OAuth2 con redirección y código de autorización.</p>
 
@@ -40,45 +41,43 @@
       <p class="small">
         Tras iniciar sesión, serás redirigido al callback donde verás el <b>authorization code</b>.
       </p>
-    </div>
-  </header>
+    </header>
 
-  <!-- INFO SECTION -->
-  <section class="container info-section">
-    <h2>¿Qué incluye esta demo?</h2>
+    <!-- INFO SECTION -->
+    <section class="info-section">
+      <h2>¿Qué incluye esta demo?</h2>
 
-    <div class="cards-grid">
-      <div class="card">
-        <h3>Redirección a TikTok</h3>
-        <p>Un botón que envía al usuario al Authorization Endpoint de TikTok.</p>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>Redirección a TikTok</h3>
+          <p>Un botón que envía al usuario al Authorization Endpoint de TikTok.</p>
+        </div>
+
+        <div class="card">
+          <h3>Callback funcional</h3>
+          <p>
+            Tu archivo <code>/api/callback</code> recibe el <i>authorization code</i> y lo muestra.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Compatible con Vercel</h3>
+          <p>
+            Deploy automático + SSL + dominio personalizado desde GitHub.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Extensible</h3>
+          <p>
+            Perfecto para añadir más APIs o redes sociales en el futuro.
+          </p>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <h3>Callback funcional</h3>
-        <p>
-          Tu archivo <code>/api/callback</code> recibe el <i>authorization code</i> y lo muestra.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Compatible con Vercel</h3>
-        <p>
-          Deploy automático + SSL + dominio personalizado desde GitHub.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Extensible</h3>
-        <p>
-          Perfecto para añadir más APIs o redes sociales en el futuro.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-section">
-    <div class="container">
+    <!-- CTA -->
+    <section class="cta-section">
       <h2>¿Quieres ampliar esta demo?</h2>
       <p>
         Podemos añadir: perfiles de usuario, analíticas, integración con más redes sociales,
@@ -87,15 +86,14 @@
       <a href="mailto:contacto@nubesocialnetworks.com" class="secondary-btn">
         Contactar
       </a>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
+    <!-- FOOTER -->
+    <footer class="footer">
       <p>© 2025 Nube Social Networks</p>
-    </div>
-  </footer>
+    </footer>
+
+  </div><!-- Fin contenedor principal -->
 
   <!-- JS LOGIN -->
   <script>
