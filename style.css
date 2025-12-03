@@ -11,7 +11,7 @@
 /* FONDO ANIMADO AZUL     */
 /* ====================== */
 body {
-  background: linear-gradient(120deg, #1e3c72, #2a5298, #3b70c4);
+  background: linear-gradient(120deg, #0a1a40, #1e3c72, #3b70c4);
   background-size: 400% 400%;
   animation: gradientFlow 12s ease infinite;
   font-family: Arial, sans-serif;
@@ -91,7 +91,7 @@ h1, h2, h3, p, a, button {
 .hero-section {
   text-align: center;
   padding: 5rem 0 4rem;
-  background: rgba(255,255,255,0.05);
+  background: rgba(0,0,50,0.2));
   border-bottom: 1px solid rgba(255,255,255,0.1);
   border-radius: 12px;
 }
