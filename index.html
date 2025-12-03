@@ -3,56 +3,103 @@
 <head>
   <meta charset="utf-8" />
   <title>Nube Social Networks</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Estilos -->
   <link rel="stylesheet" href="/css/style.css" />
 </head>
+
 <body>
-  <header class="site-header">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <div class="logo">Nube Social Networks</div>
+
+      <ul class="nav-links">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/terms.html">Términos</a></li>
+        <li><a href="/privacy.html">Privacidad</a></li>
+        <li><a href="/api/callback">Callback</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero-section">
     <div class="container">
-      <h1>Nube Social Networks</h1>
-      <p>Demo de integración social via OAuth</p>
+      <h1>Demo de Login con TikTok</h1>
+      <p>Prueba cómo funciona el flujo OAuth2 con redirección y código de autorización.</p>
+
+      <button id="loginBtn" class="primary-btn">
+        Login con TikTok
+      </button>
+
+      <p class="small">
+        Tras iniciar sesión, serás redirigido al callback donde verás el <b>authorization code</b>.
+      </p>
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <h2>Conéctate con TikTok</h2>
-      <p>Haz login para probar nuestra demo de OAuth.</p>
-      <button id="loginBtn">Login con TikTok</button>
-    </section>
+  <!-- SECCIÓN DE INFORMACIÓN (Tus indicaciones “previas” mantenidas) -->
+  <section class="container info-section">
+    <h2>¿Qué incluye esta demo?</h2>
 
-    <section class="info">
-      <h2>¿Qué ofrece esta demo?</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>OAuth con TikTok</h3>
-          <p>Flujo estándar de autorización + callback + código de demo.</p>
-        </div>
-        <div class="card">
-          <h3>Fácil de desplegar</h3>
-          <p>Listo para Vercel + GitHub, sin dependencias extra.</p>
-        </div>
-        <div class="card">
-          <h3>Extensible</h3>
-          <p>Puedes añadir más redes sociales o funcionalidades si quieres.</p>
-        </div>
+    <div class="cards-grid">
+
+      <div class="card">
+        <h3>Redirección a TikTok</h3>
+        <p>Un botón que envía al usuario al Authorization Endpoint de TikTok.</p>
       </div>
-    </section>
 
-    <section class="footer-cta">
-      <p>¿Interesado en más funcionalidades? Contáctanos</p>
-      <!-- aquí podrías poner un enlace de contacto / formulario -->
-    </section>
-  </main>
+      <div class="card">
+        <h3>Callback funcional</h3>
+        <p>
+          Tu archivo <code>/api/callback</code> recibe el <i>authorization code</i> y lo muestra.
+        </p>
+      </div>
 
-  <footer class="site-footer">
+      <div class="card">
+        <h3>Compatible con Vercel</h3>
+        <p>
+          Deploy automático + SSL + dominio personalizado desde GitHub.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Extensible</h3>
+        <p>
+          Perfecto para añadir más APIs o redes sociales en el futuro.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA / SECCIÓN EXTRA PROPUESTA -->
+  <section class="cta-section">
     <div class="container">
-      <p>&copy; 2025 Nube Social Networks</p>
+      <h2>¿Quieres ampliar esta demo?</h2>
+      <p>
+        Podemos añadir: perfiles de usuario, analíticas, integración con más redes sociales,
+        diseño completo tipo landing, backend avanzado o lo que necesites.
+      </p>
+      <a href="mailto:contacto@nubesocialnetworks.com" class="secondary-btn">
+        Contactar
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Nube Social Networks</p>
     </div>
   </footer>
 
+  <!-- JS LOGIN -->
   <script>
-    const clientKey = "awqrvxofol7bh9e4"; 
+    const clientKey = "awqrvxofol7bh9e4";
     const redirectUri = "https://nubesocialnetworks.com/api/callback";
     const state = "demo123";
 
@@ -61,6 +108,6 @@
       window.location.href = authUrl;
     });
   </script>
+
 </body>
 </html>
-
