@@ -1,85 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Nube Marketing & Social Networks</title>
-    <!-- Fuente Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <title>Nube Social Networks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
-
 <body>
-
-<header>
-    <div class="logo">Nube Marketing & Social Networks</div>
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#quehacemos">Qué hacemos</a>
-        <a href="#tecnologia">Tecnología IA</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-</header>
-
-<section id="inicio" class="hero">
-    <h1>Transformamos tus redes sociales con Inteligencia Artificial</h1>
-    <p>Maximizamos tu engagement mediante análisis de datos, modelos predictivos y estrategias inteligentes.</p>
-    <a class="btn" href="#quehacemos">Descubre cómo trabajamos</a>
-</section>
-
-<section id="mision" class="section">
-    <h2>Nuestra Misión</h2>
-    <p>Impulsar a empresas y creadores digitales mediante estrategias basadas en datos, automatización e inteligencia artificial.</p>
-</section>
-
-<section id="vision" class="section">
-    <h2>Nuestra Visión</h2>
-    <p>Ser la consultora líder en optimización de redes sociales con modelos IA en el mercado hispanohablante.</p>
-</section>
-
-<section id="quehacemos" class="section">
-    <h2>Qué hacemos</h2>
-    <ul>
-        <li>Consultoría inteligente en redes sociales</li>
-        <li>Modelos predictivos de engagement</li>
-        <li>Optimización avanzada del contenido</li>
-        <li>Dashboards y automatización con IA</li>
-        <li>Gestión profesional de TikTok, Instagram y YouTube</li>
-    </ul>
-    <img src="assets/images/marketing.jpg" alt="Marketing digital" class="section-img" />
-</section>
-
-<section id="tecnologia" class="section">
-    <h2>Tecnología IA</h2>
-    <p>Nuestros modelos analizan video, texto y KPIs para ofrecer predicciones fiables y accionables.</p>
-</section>
-
-<section id="nosotros" class="section">
-    <h2>Nosotros</h2>
-    <p>Somos especialistas en IA aplicada al marketing, crecimiento en redes, análisis y automatización de procesos.</p>
-</section>
-
-<section id="contacto" class="section contact">
-    <h2>Contacto</h2>
-    <p>Email: <strong>contacto@nubesocialnetworks.com</strong></p>
-    <div class="social-icons">
-        <a href="https://www.tiktok.com/@nubesocialnetworks">
-            <img src="assets/tiktok-icon.svg" alt="TikTok" />
-        </a>
-        <a href="https://www.instagram.com/nubesocialnetworks">
-            <img src="assets/instagram-icon.svg" alt="Instagram" />
-        </a>
-        <a href="https://www.youtube.com/c/NubeMarketingSocialNetworks">
-            <img src="assets/youtube-icon.svg" alt="YouTube" />
-        </a>
+  <header class="site-header">
+    <div class="container">
+      <h1>Nube Social Networks</h1>
+      <p>Demo de integración social via OAuth</p>
     </div>
-</section>
+  </header>
 
-<footer>
-    <p>© 2025 Nube Marketing & Social Networks — Todos los derechos reservados</p>
-</footer>
+  <main class="container">
+    <section class="hero">
+      <h2>Conéctate con TikTok</h2>
+      <p>Haz login para probar nuestra demo de OAuth.</p>
+      <button id="loginBtn">Login con TikTok</button>
+    </section>
 
+    <section class="info">
+      <h2>¿Qué ofrece esta demo?</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>OAuth con TikTok</h3>
+          <p>Flujo estándar de autorización + callback + código de demo.</p>
+        </div>
+        <div class="card">
+          <h3>Fácil de desplegar</h3>
+          <p>Listo para Vercel + GitHub, sin dependencias extra.</p>
+        </div>
+        <div class="card">
+          <h3>Extensible</h3>
+          <p>Puedes añadir más redes sociales o funcionalidades si quieres.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-cta">
+      <p>¿Interesado en más funcionalidades? Contáctanos</p>
+      <!-- aquí podrías poner un enlace de contacto / formulario -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Nube Social Networks</p>
+    </div>
+  </footer>
+
+  <script>
+    const clientKey = "awqrvxofol7bh9e4"; 
+    const redirectUri = "https://nubesocialnetworks.com/api/callback";
+    const state = "demo123";
+
+    document.getElementById("loginBtn").addEventListener("click", () => {
+      const authUrl = `https://www.tiktok.com/auth/authorize?client_key=${clientKey}&response_type=code&scope=user.info.basic&redirect_uri=${encodeURIComponent(redirectUri)}&state=${state}`;
+      window.location.href = authUrl;
+    });
+  </script>
 </body>
 </html>
 
