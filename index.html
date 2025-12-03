@@ -6,31 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Estilos -->
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <div class="container"><!-- Contenedor principal -->
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <div class="logo">Nube Social Networks</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Nosotros</a></li>
+        <li><a href="services.html">Servicios</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+        <li><a href="terms.html">Términos</a></li>
+        <li><a href="privacy.html">Privacidad</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- NAVBAR ACTUALIZADO -->
-    <nav class="navbar">
-      <div class="nav-content">
-        <div class="logo">Nube Social Networks</div>
-
-        <ul class="nav-links">
-          <li><a href="/">Inicio</a></li>
-          <li><a href="/about.html">Nosotros</a></li>
-          <li><a href="/services.html">Servicios</a></li>
-          <li><a href="/contact.html">Contacto</a></li>
-          <li><a href="/terms.html">Términos</a></li>
-          <li><a href="/privacy.html">Privacidad</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- HERO SECTION -->
-    <header class="hero-section">
+  <!-- HERO SECTION -->
+  <header class="hero-section">
+    <div class="container">
       <h1>Demo de Login con TikTok</h1>
       <p>Prueba cómo funciona el flujo OAuth2 con redirección y código de autorización.</p>
 
@@ -41,12 +39,13 @@
       <p class="small">
         Tras iniciar sesión, serás redirigido al callback donde verás el <b>authorization code</b>.
       </p>
-    </header>
+    </div>
+  </header>
 
-    <!-- INFO SECTION -->
-    <section class="info-section">
+  <!-- INFO SECTION -->
+  <section class="info-section">
+    <div class="container">
       <h2>¿Qué incluye esta demo?</h2>
-
       <div class="cards-grid">
         <div class="card">
           <h3>Redirección a TikTok</h3>
@@ -55,29 +54,25 @@
 
         <div class="card">
           <h3>Callback funcional</h3>
-          <p>
-            Tu archivo <code>/api/callback</code> recibe el <i>authorization code</i> y lo muestra.
-          </p>
+          <p>Tu archivo <code>/api/callback</code> recibe el <i>authorization code</i> y lo muestra.</p>
         </div>
 
         <div class="card">
           <h3>Compatible con Vercel</h3>
-          <p>
-            Deploy automático + SSL + dominio personalizado desde GitHub.
-          </p>
+          <p>Deploy automático + SSL + dominio personalizado desde GitHub.</p>
         </div>
 
         <div class="card">
           <h3>Extensible</h3>
-          <p>
-            Perfecto para añadir más APIs o redes sociales en el futuro.
-          </p>
+          <p>Perfecto para añadir más APIs o redes sociales en el futuro.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CTA -->
-    <section class="cta-section">
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
       <h2>¿Quieres ampliar esta demo?</h2>
       <p>
         Podemos añadir: perfiles de usuario, analíticas, integración con más redes sociales,
@@ -86,14 +81,15 @@
       <a href="mailto:contacto@nubesocialnetworks.com" class="secondary-btn">
         Contactar
       </a>
-    </section>
+    </div>
+  </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
       <p>© 2025 Nube Social Networks</p>
-    </footer>
-
-  </div><!-- Fin contenedor principal -->
+    </div>
+  </footer>
 
   <!-- JS LOGIN -->
   <script>
