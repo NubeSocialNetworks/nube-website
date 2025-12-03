@@ -1,123 +1,85 @@
-/* GENERAL */
+/* Reset sencillo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    color: #0D0D0D;
-    scroll-behavior: smooth;
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
-h1, h2 {
-    margin-bottom: 20px;
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
 }
 
-/* HEADER */
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #ffffffc9;
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    z-index: 1000;
-    border-bottom: 1px solid #e0e0e0;
+.site-header {
+  background-color: #0047ab; /* puedes elegir otro color */
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
 }
 
-header .logo {
-    font-weight: bold;
-    font-size: 18px;
+.site-header h1 {
+  margin-bottom: 0.5rem;
 }
 
-header nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #0D0D0D;
-    font-weight: 600;
-}
-
-header nav a:hover {
-    color: #005CFF;
-}
-
-/* SECTIONS */
-.section {
-    padding: 120px 40px;
-}
-
-.section-img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-
-/* HERO */
 .hero {
-    height: 100vh;
-    background: url("assets/background.jpg") no-repeat center center;
-    background-size: cover;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 40px;
+  text-align: center;
+  padding: 4rem 0;
 }
 
-.hero p {
-    max-width: 600px;
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.btn {
-    background: white;
-    color: #005CFF;
-    padding: 12px 24px;
-    border-radius: 6px;
-    text-decoration: none;
-    margin-top: 20px;
-    display: inline-block;
-    font-weight: 600;
+.hero button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background-color: #ff6b00; /* color destacado */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.btn:hover {
-    opacity: 0.9;
+.hero button:hover {
+  background-color: #e55a00;
 }
 
-/* CONTACTO */
-.contact p {
-    font-size: 18px;
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
-.social-icons {
-    margin-top: 15px;
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex: 1 1 250px;
 }
 
-.social-icons a {
-    margin-right: 15px;
+.footer-cta {
+  text-align: center;
+  padding: 2rem 0;
+  background: #fff;
+  margin-top: 3rem;
+  border-top: 1px solid #ddd;
 }
 
-.social-icons img {
-    width: 32px;
-    height: 32px;
+.site-footer {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #666;
 }
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #f4f5f7;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    header {
-        padding: 10px 20px;
-    }
-    header nav a {
-        margin-left: 10px;
-    }
-    .hero {
-        padding: 0 20px;
-    }
-}
-
