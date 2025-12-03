@@ -5,11 +5,34 @@
   box-sizing: border-box;
 }
 
+/* Fondo animado azul fluido */
 body {
-  font-family: "Segoe UI", sans-serif;
-  background: #f6f6f6;
-  color: #333;
+  background: linear-gradient(120deg, #1e3c72, #2a5298, #3b70c4);
+  background-size: 400% 400%;
+  animation: gradientFlow 12s ease infinite;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
 }
+
+/* Animación del gradiente */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Asegurar legibilidad del contenido */
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Opcional: añadir ligero sombreado a textos y botones */
+h1, h2, h3, p, a, button {
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
 
 /* CONTAINER */
 .container {
